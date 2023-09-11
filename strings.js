@@ -4,7 +4,7 @@ let age = 19
 
 console.log("Soy " + name + " mi apellido es " + lastName)
 
-console.log ("I´m " + name + " " + lastName )
+console.log ("I'm " + name + " " + lastName )
 console.log ('I\'m'   + name + " " + lastName )
 
 // Imprimir Soy Juan Del Carmen y tengo 19 años 
@@ -20,3 +20,4 @@ console.log(texto.charAt(5))
 console.log(texto.endsWith('s'))
 console.log(texto.includes( 'es'  ))
 console.log(texto.length)
+console.log('*'.repeat(10))
