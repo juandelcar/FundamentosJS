@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+</head>
+<style>
+    .container {
+        width: 300px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20 px;
+    }
+    
+      .input-container {
+        position: relative;
+        width: 250px;
+        height: 36px;
+        background-color: var(--bg-color);
+        border: 2px solid var(--main-color);
+        border-radius: 34px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 4px 4px var(--main-color);
+      }
+    
+      .option {
+        width: 80.5px;
+        height: 28px;
+        position: relative;
+        top: 2px;
+        left: 2px;
+      }
+    
+      .input {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        appearance: none;
+        cursor: pointer;
+      }
+    
+      .btn {
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-color);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        width: 80%;
+        height: 100%;
+        background-color: aqua;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+    
+      .span {
+        color: var(--font-color-dark);
+      }
+    
+    
+      
+    </style>
+
+    <body>
+      <div class="container">
+        <div class="input-container">
+          <input type="text" name="" id="num1" class="input">
+        </div>
+        <br>
+        <div class="input-container">
+          <input type="text" name="" id="num2" class="input">
+        </div>
+        <br>
+        <div class="input-container">
+          <input type="text" name="" id="result" class="input" disabled>
+        </div>
+        <br>
+    
+        <button onclick="sumar()" class="btn"><span class="span">Sumar</span></button>
+        <button onclick="restar()" class="btn"><span class="span">Restar</span></button>
+        <button onclick="multiplicar()" class="btn"><span class="span">Multiplicar</span></button>
+        <button onclick="dividir()" class="btn"><span class="span">Dividir</span></button>
+        <button onclick="limpiar()" class="btn"><span class="span">Limpiar</span></button>
+      </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
